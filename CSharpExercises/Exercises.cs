@@ -23,11 +23,39 @@ namespace CSharpExercises
         /* Alright - your turn now! */
 
         // 1. Create a method called SayHello that accepts a string representing a name and returns a welcome message (E.g. "Hello John!")
+        public class SayHello (string name)
+        {
+            return Console.WriteLine("Hello " + name + "!");
+        }
         // 2. Create a method called Sum that accepts two integers and returns their sum.
+        public class Sum(int one, int two) 
+        {
+            return one + two;
+        }
         // 3. Create a method called Divide that accepts two decimals and returns the result of dividing the two numbers as a decimal.
+        public class Deivide(double one, double two)
+        {
+            return Math.Round(one/two, 2);
+        }
         // 4. Create a method called CanOpenCheckingAccount that accepts an integer representing a customers age, returning true if the age is greater than or equal to 18, or false if the argument is less than 18.
+        public class CanOpenCheckingAccount(int age)
+        {
+            if (age >= 18) {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         // 5. Create a method called GetFirstName that accepts a string representing a full name (e.g. "John Smith"), and returns only the first name.
+        public class GetFirstName(string FullName)
+        {
+            string[] FirstName = FullName.Split(' ');
+            return FirstName[0];
+        }
         // 6. Create a method called ReverseStringHard that accepts a string and returns the string in reverse. (No built in functions allowed)
+        //public class ReverseStringHard(
         // 7. Create a method called ReverseStringEasy that accepts a string and returns the string in reverse. (Using only built in functions)
         // 8. Create a method called PrintTimesTable that accepts an integer and returns the times table as a string for that number up to the 10th multiplication.
         /* e.g. 10 should return
