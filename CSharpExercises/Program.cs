@@ -54,10 +54,10 @@ namespace CSharpExercises
             Assert("CollatzConjecture(27) should return 111", Exercises.CollatzConjecture(27) == 111);
             //Assert("GetOccurences(\"Hello World!\", \"World\") should return 1", Exercises.GetOccurences("Hello World!", "World") == 1);
             Assert("GetNext7Days() should return next 7 days", JsonConvert.SerializeObject(Exercises.GetNext7Days(DateTime.Parse("08/22/2016"))) == JsonConvert.SerializeObject(Constants.Next7Days));
-            //Assert("IsInLeapYear(2000) should return true", Exercises.IsLeapYear(2000) == true);
-            //Assert("IsInLeapYear(1904) should return true", Exercises.IsLeapYear(1904) == true);
-            //Assert("IsInLeapYear(1900) should return false", Exercises.IsLeapYear(1900) == false);
-            //Assert("IsInLeapYear(1901) should return false", Exercises.IsLeapYear(1901) == false);
+            Assert("IsInLeapYear(2000) should return true", Exercises.IsInLeapYear(2000) == true);
+            Assert("IsInLeapYear(1904) should return true", Exercises.IsInLeapYear(1904) == true);
+            Assert("IsInLeapYear(1900) should return false", Exercises.IsInLeapYear(1900) == false);
+            Assert("IsInLeapYear(1901) should return false", Exercises.IsInLeapYear(1901) == false);
             Assert("MortgageCalculator(300000, 3.8, 30, 12) should return 1397.87", Exercises.MortgageCalculator(300000, 3.8, 30, 12) == 1397.87);
             Assert("DuckGoose(100) should print correctly", Exercises.DuckGoose(100) == Constants.DuckGooseResult);
         

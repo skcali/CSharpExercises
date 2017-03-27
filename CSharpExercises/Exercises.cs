@@ -209,9 +209,9 @@ namespace CSharpExercises
             return aDate;
         }
         // 18. Create a method called IsInLeapYear that accepts a DateTime object and returns true if the date falls within a leap year and false if not. (No built in functions allowed)
-        public static bool IsInLeapYear(DateTime dt)
+        public static bool IsInLeapYear(int dt)
         {
-            if (DateTime.IsLeapYear(dt.Year))
+            if ((dt % 4 == 0 && dt % 100 != 0) || (dt % 400 == 0))
             {
                 return true;
             }
@@ -265,7 +265,7 @@ namespace CSharpExercises
          * 1
          * 2
          * Duck
-         * 4
+         * 4       
          * Goose
          * Duck
          * 7
